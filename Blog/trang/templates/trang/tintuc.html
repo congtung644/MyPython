@@ -1,0 +1,7 @@
+{% extends "pages/index.html" %}
+{% block title %}Tintuc{% endblock %}
+{% block content %}
+{%for post in Posts %}
+    <h5>{{post.date|date:"d-m-Y"}}<a href="/tintuc/{{post.id}}">{{post.title}}</a></h5>
+{% endfor %}
+{% endblock %}
